@@ -5,7 +5,9 @@ body {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
   color: #111;
-  background: #edeff0;
+  background: url('svgs/background.svg');
+  background-size: 50px 50px;
+  background-color: #edeff0;
 }
 
 #container {
@@ -26,6 +28,8 @@ a {
   text-decoration: none;
   color: #39add1;
   font-weight: 700;
+  display: flex;
+  align-items: flex-start;
 }
 
 a:hover {
@@ -41,9 +45,24 @@ header nav {
   text-align: left;
 }
 
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  list-style: none;
+}
+
 header nav ul li {
   display: inline-block;
   margin-right: 20px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-right: 1rem;
+  fill: #999;
 }
 
 main {
