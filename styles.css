@@ -30,6 +30,7 @@ a {
   font-weight: 700;
   display: flex;
   align-items: flex-start;
+  margin-right: 5px;
 }
 
 a:hover {
@@ -57,12 +58,24 @@ header nav ul li {
   margin-right: 20px;
 }
 
-.icon {
-  width: 40px;
-  height: 40px;
-  float: left;
+
+a .icon {
+  width: 25px;
+  height: 25px;
   margin-right: 1rem;
   fill: #999;
+  transition: transform .4s;
+}
+
+a:hover .icon {
+  transform: scale(1.2);
+}
+
+.icon .st0 {
+  width: 25px;
+  height: 25px;
+  margin-right: 1rem;
+  fill: currentColor;
 }
 
 main {
@@ -73,9 +86,43 @@ main h2 {
   font-size: 28px;
 }
 
+.letters {
+  display: none;
+}
+
+#main-logo {
+  width: 140px;
+  height: 120px;
+  transition: transform .4s;
+}
+
+#main-logo:hover {
+  transform: rotate(30deg)
+}
+
+.corgi_wrap {
+  justify-content: center;
+}
+
+.corgi_wrap li {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
 footer {
   width: 100%;
   margin-top: 100px;
   padding-bottom: 30px;
   color: #ba8058;
+}
+
+
+@media (min-width: 425px) {
+  .letters {
+    display: inline-block;
+  }
+  .logo-h1 {
+    display: none;
+  } 
 }
