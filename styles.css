@@ -110,6 +110,34 @@ main h2 {
   align-items: center;
 }
 
+.first{
+  color: #b97f5b;
+}
+
+.second{
+  color: #e9aa82;
+}
+
+.third {
+  color: #834b29;
+}
+
+.fourth{
+  color: #52595e;
+}
+
+.white {
+  fill: #fff;
+}
+
+.nose_and_eyes {
+  fill: #2d3339;
+}
+
+.brows {
+  fill: #d8805c
+}
+
 footer {
   width: 100%;
   margin-top: 100px;
